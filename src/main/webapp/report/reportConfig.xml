@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<reportConfig>
+	<config>
+		<name>logConfig</name>
+		<value>/report/runqianReportLog.properties</value>
+	</config>
+	<config>
+		<name>license</name>
+		<value>/report/ServerYV4.0Windows.lic</value>
+	</config>
+	<config>
+		<name>reportFileHomeTypeAbsolute</name>
+		<value>false</value>
+	</config>		
+	<config>
+		<name>reportFileHome</name>
+		<value>/report/reportFiles</value>
+	</config>
+	<config>
+		<name>semanticsFile</name>
+		<value />
+	</config>
+	<config>
+		<name>JNDIPrefix</name>
+		<value>java:comp/env</value>
+	</config>
+	<config>
+		<name>dataSource</name>
+		<value />
+	</config>
+	<config>
+		<name>jspCharset</name>
+		<value>UTF-8</value>
+	</config>
+	<config>
+		<name>alwaysReloadDefine</name>
+		<value>yes</value>
+	</config>
+	<config>
+		<name>cachedParamsTimeout</name>
+		<value>120</value>
+	</config>
+	<config>
+		<name>cachedReportDir</name>
+		<value/>
+	</config>
+	<config>
+		<name>cachedIdPrefix</name>
+		<value>A</value>
+	</config>
+	<config>
+		<name>cachedReportTimeout</name>
+		<value>120</value>
+	</config>
+	<config>
+		<name>maxCellNum</name>
+		<value>100000</value>
+	</config>
+	<config>
+		<name>maxConcurrentForReport</name>
+		<value>10</value>
+	</config>
+	<config>
+		<name>maxWaitForReport</name>
+		<value>10</value>
+	</config>
+	<config>
+		<name>maxWaitTimeForReport</name>
+		<value>30</value>
+	</config>
+	<config>
+		<name>appUrlPrefix</name>
+		<value />
+	</config>
+	<config>
+		<name>windir</name>
+		<value />
+	</config>
+	<config>
+		<name>errorPage</name>
+		<value>/report/reportJsp/myErrorPage.jsp</value>
+	</config>
+	<config>
+		<name>webServerType</name>
+		<value />
+	</config>
+	<config>
+		<name>jreInstallName</name>
+		<value />
+	</config>
+	<config>
+		<name>jreVersion</name>
+		<value />
+	</config>
+	<config>
+		<name>clusterMember</name>
+		<value />
+	</config>
+	<config>
+		<name>isCachedFileShared</name>
+		<value />
+	</config>
+	<config>
+		<name>olapGraphProfile</name>
+		<value />
+	</config>
+	<config>
+		<name>olapDir</name>
+		<value />
+	</config>
+	
+	<!-- 配置文件中第一个配置为即时报表的主配置 -->
+	<jdbc-ds-configs>
+        <jdbc-ds-config>
+            <name>sde</name>
+            <db-type>2</db-type>
+            <connection-url>jdbc:sqlserver://192.168.66.112;instanceName=EMRV2;DatabaseName=dev-sde
+            </connection-url>
+            <driver-class>com.microsoft.sqlserver.jdbc.SQLServerDriver</driver-class>
+            <user-name>dev</user-name>
+            <password>pddev</password>
+            <db-charset>GBK</db-charset>
+            <client-charset>GBK</client-charset>
+            <extend-properties></extend-properties>
+        </jdbc-ds-config>
+    </jdbc-ds-configs>
+</reportConfig>
+

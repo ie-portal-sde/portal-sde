@@ -1,0 +1,41 @@
+<!-- frameworkPlugins 框架插件集合 frameworkPlugin 框架插件定义 parameters 框架启动参数集合 param 
+	框架启动参数 -->
+<frameworkPlugins>
+	<!-- code: 插件代码,不允许为这，必须唯一 title:插件标题，允许为空 entryPoint:插件命令,不允许为空 ordinal:排序号 
+		,取值范围:所有整数 可选 -->
+	<frameworkPlugin code='cache_plugin' title='缓存插件'
+		command='net.carefx.framework.cache.gwt.client.page.CacheManagerEntryPoint'>
+	</frameworkPlugin>
+	<frameworkPlugin code='_fc_framework_clinical_systemhelp_plugin'
+		title='系统帮助插件'
+		command='net.carefx.fc.framework.web.plugin.toolbar.systemhelp.client.page.SystemHelpEntryPoint'
+		ordinal="10050">
+	</frameworkPlugin>
+	<frameworkPlugin code='_fc_framework_clinical_logout_plugin'
+		title='退出系统插件'
+		command='net.carefx.fc.framework.web.plugin.toolbar.logout.client.page.LogOutEntryPoint'
+		ordinal="10070">
+	</frameworkPlugin>
+	<frameworkPlugin code='_fc_framework_clinical_systemset_plugin'
+		title='系统设置插件'
+		command='net.carefx.fc.framework.web.plugin.toolbar.systemset.client.page.SystemSetEntryPoint'
+		ordinal="10060">
+	</frameworkPlugin>
+	<frameworkPlugin code="_fc_framework_clinical_loginname_plugin"
+		title="登录用户名"
+		command="net.carefx.fc.framework.web.plugin.toolbar.sysloginname.client.page.SysLoginNameEntryPoint"
+		ordinal='10030'></frameworkPlugin>
+	<frameworkPlugin code="_fc_framework_switch_workbench_plugin"
+		title="切换工作台"
+		command="net.carefx.fc.framework.web.plugin.toolbar.workbenchchange.client.page.WorkbenchChangeEntryPoint"
+		ordinal='10040'>
+		<parameters>
+			<param>net.carefx.framework.client.mvc.workbench.impl.DefaultWorkbenchChooseViewFactory</param>
+		</parameters>
+	</frameworkPlugin>
+	<frameworkPlugin code="_fc_framework_switch_workbench_plugin"
+		title="切换病区"
+		command="net.carefx.fc.framework.web.plugin.toolbar.patareachange.client.page.PatAreaChangeEntryPoint"
+		ordinal='10041'>
+	</frameworkPlugin>
+</frameworkPlugins>

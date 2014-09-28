@@ -1,0 +1,611 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
+	<!-- POM file generated with GWT webAppCreator -->
+	<modelVersion>4.0.0</modelVersion>
+	<parent>
+		<groupId>net.carefx.fc</groupId>
+		<artifactId>fc-super-parent</artifactId>
+		<version>3.0.0.Alpha1</version>
+	</parent>
+	<groupId>com.xunuo.fc.portal</groupId>
+	<artifactId>shxh-portal-doctor</artifactId>
+	<version>3.2.8</version>
+	<packaging>war</packaging>
+	<name>Portal for Doctor</name>
+	<url>http://maven.apache.org</url>
+
+	<properties>
+		<war.name>doctor</war.name>		
+		<framework.version>3.1.0</framework.version>
+		<saturn.version>3.0.0.Alpha1</saturn.version>
+		<patient.version>2.0.7</patient.version>
+		<fc-common.version>1.16.1</fc-common.version>
+		<shxh.version>3.2.8</shxh.version>
+		<sde.version>3.4.6</sde.version>
+		<shxh.scm.url>https://192.168.66.26/svn/SourceCodeBase/Clinical/21_project/shxh/01_trunk/ext/web</shxh.scm.url>
+	</properties>
+	
+	<scm>
+		<connection>scm:svn:${shxh.scm.url}</connection>
+		<developerConnection>scm:svn:${shxh.scm.url}</developerConnection>
+		<url>${shxh.scm.url}</url>
+	</scm>
+	<dependencies>  
+		<dependency>
+            <groupId>com.alibaba</groupId>
+            <artifactId>dubbo</artifactId>
+            <version>2.4.9</version>
+        </dependency> 
+		<dependency>
+			<groupId>net.carefx.fc.cpoe</groupId>
+			<artifactId>shxh-cpoe-facade-web</artifactId>
+			<version>${shxh.version}</version>
+		</dependency> 
+		<dependency>
+			<groupId>net.carefx.fc.sde</groupId>
+			<artifactId>fc-sde-project-emr-facade-web</artifactId>
+			<version>${sde.version}</version>
+		</dependency>  
+		<dependency>
+			<groupId>net.carefx.fc.patient</groupId>
+			<artifactId>fc-patient-facade-web</artifactId>
+			<version>${patient.version}</version>
+		</dependency>
+		<dependency>
+			<groupId>com.xunuo.framework.xmessage</groupId>
+			<artifactId>framework-xmessage-support</artifactId>
+			<version>${framework.version}</version>
+		</dependency>
+		<dependency>
+			<groupId>com.xunuo.framework.xmessage</groupId>
+			<artifactId>framework-xmessage-support</artifactId>
+			<version>${framework.version}</version>
+			<classifier>sources</classifier>
+		</dependency>
+		
+		<dependency>
+			<groupId>com.xunuo.framework.xmessage</groupId>
+			<artifactId>framework-xmessage-ui</artifactId>
+			<version>${framework.version}</version>
+		</dependency>
+		<dependency>
+			<groupId>com.xunuo.framework.xmessage</groupId>
+			<artifactId>framework-xmessage-ui</artifactId>
+			<version>${framework.version}</version>
+			<classifier>sources</classifier>
+		</dependency>
+
+		<dependency>
+			<groupId>net.carefx.framework</groupId>
+			<artifactId>framework-facade-web</artifactId>
+			<version>${framework.version}</version>
+			<exclusions>
+				<exclusion>
+					<groupId>com.google.gwt</groupId>
+					<artifactId>gwt-dev</artifactId>
+				</exclusion>
+				<exclusion>
+					<artifactId>report4</artifactId>
+					<groupId>net.carefx.3rdparty.report</groupId>
+				</exclusion>
+			</exclusions>
+		</dependency>
+
+		<!-- java后台与C++交互需要引入的包 -->
+		<dependency>
+			<groupId>net.carefx.framework</groupId>
+			<artifactId>saturn-web-plugin</artifactId>
+			<version>${saturn.version}</version>
+		</dependency>
+		<dependency>
+			<groupId>net.carefx.framework</groupId>
+			<artifactId>saturn-web-plugin</artifactId>
+			<version>${saturn.version}</version>
+			<classifier>sources</classifier>
+		</dependency>
+		<dependency>
+			<groupId>net.carefx.fc.framework</groupId>
+			<artifactId>fc-component-report</artifactId>
+			<version>1.13</version>
+		</dependency>
+		<!-- Gwt前台与C++交互需要引入的包 -->
+		<dependency>
+			<groupId>net.carefx.framework</groupId>
+			<artifactId>saturn-server-plugin</artifactId>
+			<version>${saturn.version}</version>
+		</dependency>
+		<dependency>
+			<groupId>net.carefx.fc</groupId>
+			<artifactId>fc-common</artifactId>
+			<version>${fc-common.version}</version>
+		</dependency>
+
+		<dependency>
+			<groupId>org.apache.zookeeper</groupId>
+			<artifactId>zookeeper</artifactId>
+			<version>3.3.3</version>
+		</dependency>
+
+		<dependency>
+			<groupId>com.github.sgroschupf</groupId>
+			<artifactId>zkclient</artifactId>
+			<version>0.1</version>
+		</dependency>
+
+		<dependency>
+			<groupId>de.novanic.gwteventservice</groupId>
+			<artifactId>gwteventservice</artifactId>
+			<version>${gwt.event.service.version}</version>
+		</dependency>
+		<dependency>
+			<groupId>com.google.gwt</groupId>
+			<artifactId>gwt-servlet</artifactId>
+			<version>${gwt.version}</version>
+			<scope>provided</scope>
+		</dependency>
+
+<!-- 		<dependency> -->
+<!-- 			<groupId>com.google.gwt</groupId> -->
+<!-- 			<artifactId>gwt-dev</artifactId> -->
+<!-- 			<version>${gwt.version}</version> -->
+<!-- 			<scope>provided</scope> -->
+<!-- 		</dependency> -->
+		<dependency>
+			<groupId>com.google.gwt</groupId>
+			<artifactId>gwt-user</artifactId>
+			<scope>provided</scope>
+		</dependency>
+
+		<dependency>
+			<groupId>junit</groupId>
+			<artifactId>junit</artifactId>
+			<version>3.8.1</version>
+			<scope>test</scope>
+		</dependency>
+
+
+		<!-- Cxf Jar -->
+		<dependency>
+			<groupId>org.apache.cxf</groupId>
+			<artifactId>cxf-api</artifactId>
+			<version>${cxf.version}</version>
+		</dependency>
+
+		<dependency>
+			<groupId>org.apache.cxf</groupId>
+			<artifactId>cxf-common-schemas</artifactId>
+			<version>${cxf.version}</version>
+		</dependency>
+
+		<dependency>
+			<groupId>org.apache.cxf</groupId>
+			<artifactId>cxf-common-utilities</artifactId>
+			<version>${cxf.version}</version>
+		</dependency>
+
+		<dependency>
+			<groupId>org.apache.cxf</groupId>
+			<artifactId>cxf-rt-bindings-soap</artifactId>
+			<version>${cxf.version}</version>
+		</dependency>
+
+		<dependency>
+			<groupId>org.apache.cxf</groupId>
+			<artifactId>cxf-rt-bindings-xml</artifactId>
+			<version>${cxf.version}</version>
+		</dependency>
+
+		<dependency>
+			<groupId>org.apache.cxf</groupId>
+			<artifactId>cxf-rt-core</artifactId>
+			<version>${cxf.version}</version>
+		</dependency>
+
+		<dependency>
+			<groupId>org.apache.cxf</groupId>
+			<artifactId>cxf-rt-databinding-aegis</artifactId>
+			<version>${cxf.version}</version>
+		</dependency>
+
+		<dependency>
+			<groupId>org.apache.cxf</groupId>
+			<artifactId>cxf-rt-databinding-jaxb</artifactId>
+			<version>${cxf.version}</version>
+		</dependency>
+
+		<dependency>
+			<groupId>org.apache.cxf</groupId>
+			<artifactId>cxf-rt-frontend-jaxws</artifactId>
+			<version>${cxf.version}</version>
+		</dependency>
+
+		<dependency>
+			<groupId>org.apache.cxf</groupId>
+			<artifactId>cxf-rt-frontend-simple</artifactId>
+			<version>${cxf.version}</version>
+		</dependency>
+
+		<dependency>
+			<groupId>org.apache.cxf</groupId>
+			<artifactId>cxf-rt-transports-http</artifactId>
+			<version>${cxf.version}</version>
+		</dependency>
+
+		<dependency>
+			<groupId>org.apache.cxf</groupId>
+			<artifactId>cxf-rt-transports-local</artifactId>
+			<version>${cxf.version}</version>
+		</dependency>
+
+		<dependency>
+			<groupId>org.apache.cxf</groupId>
+			<artifactId>cxf-rt-ws-addr</artifactId>
+			<version>${cxf.version}</version>
+		</dependency>
+
+		<dependency>
+			<groupId>org.apache.cxf</groupId>
+			<artifactId>cxf-rt-ws-rm</artifactId>
+			<version>${cxf.version}</version>
+		</dependency>
+
+		<dependency>
+			<groupId>org.apache.cxf</groupId>
+			<artifactId>cxf-rt-ws-security</artifactId>
+			<version>${cxf.version}</version>
+		</dependency>
+
+		<dependency>
+			<groupId>org.apache.cxf</groupId>
+			<artifactId>cxf-tools-common</artifactId>
+			<version>${cxf.version}</version>
+		</dependency>
+
+		<dependency>
+			<groupId>org.apache.cxf</groupId>
+			<artifactId>cxf-wstx-msv-validation</artifactId>
+			<version>${cxf.version}</version>
+		</dependency>
+
+		<dependency>
+			<groupId>wsdl4j</groupId>
+			<artifactId>wsdl4j</artifactId>
+		</dependency>
+		<dependency>
+			<groupId>org.apache.xmlbeans</groupId>
+			<artifactId>xmlbeans</artifactId>
+		</dependency>
+		<dependency>
+			<groupId>org.apache.ws.commons.schema</groupId>
+			<artifactId>XmlSchema</artifactId>
+			<version>1.4.7</version>
+		</dependency>
+
+		<dependency>
+			<groupId>org.quartz-scheduler</groupId>
+			<artifactId>quartz</artifactId>
+			<version>1.7.2</version>
+		</dependency>
+
+		<dependency>
+			<groupId>commons-httpclient</groupId>
+			<artifactId>commons-httpclient</artifactId>
+			<version>${commons.httpclient.version}</version>
+		</dependency>
+
+		<dependency>
+			<groupId>net.carefx.fc.thirdparty.db.sqlserver</groupId>
+			<artifactId>sqljdbc4</artifactId>
+			<version>4.0</version>
+		</dependency>
+
+
+		<dependency>
+			<groupId>commons-collections</groupId>
+			<artifactId>commons-collections</artifactId>
+			<version>${commons.collections.version}</version>
+		</dependency>
+
+		<dependency>
+			<groupId>org.apache.poi</groupId>
+			<artifactId>poi</artifactId>
+			<version>3.6</version>
+		</dependency>
+		<dependency>
+			<groupId>org.apache.poi</groupId>
+			<artifactId>poi-ooxml</artifactId>
+			<version>3.6</version>
+		</dependency>
+
+		<dependency>
+			<groupId>org.jasig.cas.client</groupId>
+			<artifactId>cas-client-core</artifactId>
+		</dependency>
+		<dependency>
+			<groupId>org.slf4j</groupId>
+			<artifactId>slf4j-api</artifactId>
+		</dependency>
+		<dependency>
+			<groupId>org.slf4j</groupId>
+			<artifactId>slf4j-log4j12</artifactId>
+		</dependency>
+
+		<!-- Spring Jar -->
+		<dependency>
+			<groupId>org.springframework</groupId>
+			<artifactId>spring-web</artifactId>
+		</dependency>
+		<dependency>
+			<groupId>org.springframework</groupId>
+			<artifactId>spring-web-servlet</artifactId>
+		</dependency>
+
+		<dependency>
+			<groupId>net.carefx.fc.runqian</groupId>
+			<artifactId>com-runqian-util-webutil</artifactId>
+			<version>1.0</version>
+		</dependency>
+
+		<dependency>
+			<groupId>ant-contrib</groupId>
+			<artifactId>ant-contrib</artifactId>
+			<version>1.0b3</version>
+			<scope>provided</scope>
+		</dependency>
+
+
+		<dependency>
+			<groupId>net.carefx.framework</groupId>
+			<artifactId>carefx</artifactId>
+		</dependency>
+		<dependency>
+			<groupId>com.extjs</groupId>
+			<artifactId>gxt</artifactId>
+		</dependency>
+<!-- 		<dependency> -->
+<!-- 			<groupId>com.google.gwt</groupId> -->
+<!-- 			<artifactId>gwt-user</artifactId> -->
+<!-- 		</dependency> -->
+<!-- 		<dependency> -->
+<!-- 			<groupId>com.google.gwt</groupId> -->
+<!-- 			<artifactId>gwt-dev</artifactId> -->
+<!-- 		</dependency> -->
+		<dependency>
+			<groupId>net.carefx.fc.thirdparty.gwt</groupId>
+			<artifactId>gwt-fabridge</artifactId>
+		</dependency>
+		<dependency>
+			<groupId>net.carefx.fc.thirdparty.gwt</groupId>
+			<artifactId>gwt2swf</artifactId>
+		</dependency>
+		<dependency>
+			<groupId>org.mybatis</groupId>
+			<artifactId>mybatis</artifactId>
+		</dependency>
+		<dependency>
+			<groupId>org.mybatis</groupId>
+			<artifactId>mybatis-spring</artifactId>
+		</dependency>
+		<dependency>
+			<groupId>commons-dbcp</groupId>
+			<artifactId>commons-dbcp</artifactId>
+		</dependency>
+		<dependency>
+			<groupId>org.slf4j</groupId>
+			<artifactId>slf4j-api</artifactId>
+		</dependency>
+		<dependency>
+			<groupId>org.slf4j</groupId>
+			<artifactId>slf4j-log4j12</artifactId>
+		</dependency>
+
+		<dependency>
+			<groupId>org.springframework</groupId>
+			<artifactId>spring-aop</artifactId>
+		</dependency>
+		<dependency>
+			<groupId>org.springframework</groupId>
+			<artifactId>spring-web</artifactId>
+		</dependency>
+		<dependency>
+			<groupId>org.springframework</groupId>
+			<artifactId>spring-webmvc</artifactId>
+		</dependency>
+		<dependency>
+			<groupId>org.springframework</groupId>
+			<artifactId>spring-jms</artifactId>
+			<version>${org.springframework.version}</version>
+		</dependency>
+		<dependency>
+			<groupId>org.springframework</groupId>
+			<artifactId>spring-orm-ibatis3</artifactId>
+		</dependency>
+		<dependency>
+			<groupId>org.springframework</groupId>
+			<artifactId>spring-test</artifactId>
+			<scope>test</scope>
+		</dependency>
+		<dependency>
+			<groupId>org.aspectj</groupId>
+			<artifactId>aspectjweaver</artifactId>
+		</dependency>
+		<dependency>
+			<groupId>org.aspectj</groupId>
+			<artifactId>aspectjrt</artifactId>
+		</dependency>
+		<dependency>
+			<groupId>de.novanic.gwteventservice</groupId>
+			<artifactId>gwteventservice</artifactId>
+		</dependency>
+		<dependency>
+			<groupId>org.jasig.cas.client</groupId>
+			<artifactId>cas-client-core</artifactId>
+		</dependency>
+		<dependency>
+			<groupId>javax.mail</groupId>
+			<artifactId>mail</artifactId>
+			<version>1.4.6-rc1</version>
+		</dependency>
+		<dependency>
+			<groupId>junit</groupId>
+			<artifactId>junit-dep</artifactId>
+			<version>4.9</version>
+			<scope>test</scope>
+		</dependency>
+		<dependency>
+			<groupId>org.apache.poi</groupId>
+			<artifactId>poi</artifactId>
+		</dependency>
+		<dependency>
+			<groupId>org.apache.poi</groupId>
+			<artifactId>poi-ooxml</artifactId>
+		</dependency>
+		<dependency>
+			<groupId>commons-fileupload</groupId>
+			<artifactId>commons-fileupload</artifactId>
+		</dependency>
+		<dependency>
+			<groupId>commons-httpclient</groupId>
+			<artifactId>commons-httpclient</artifactId>
+		</dependency>
+
+	</dependencies>
+	<build>
+		<finalName>fc-doctor</finalName>
+
+		<plugins>
+
+			<plugin>
+				<groupId>org.apache.maven.plugins</groupId>
+				<artifactId>maven-war-plugin</artifactId>
+				<configuration>
+					<warName>${war.name}</warName>
+					<packagingExcludes>**/*-sources.jar</packagingExcludes>
+				</configuration>
+			</plugin>
+			<plugin>
+				<groupId>com.xunuo.framework</groupId>
+				<artifactId>framework-gwt-maven-plugin</artifactId>
+				<version>${gwt.version}</version>
+				<executions>
+					<execution>
+						<configuration>
+							<runTarget>index.html</runTarget>
+							<hostedWebapp>${webapp.target.dir}</hostedWebapp>
+							<modules>
+								<module>com.xunuo.fc.Doctor</module>
+							</modules>
+							<extraJvmArgs>-Xmx2048M -Xss2048k</extraJvmArgs>
+							<logLevel>ERROR</logLevel>
+							<excludeJars>-service-,cxf-,ant-,cglib-,jboss,commons-,batik-,slf4j-,plexus-,poi-,sqljdbc4,log4j-,dom4j-,mybatis-,gwt-dev</excludeJars>
+						</configuration>
+						<goals>
+							<goal>framework-gwtc</goal>
+						</goals>
+					</execution>
+				</executions>
+				<!-- Plugin configuration. There are many available options, see gwt-maven-plugin 
+					documentation at codehaus.org -->
+			</plugin>
+
+			<!-- <plugin> -->
+			<!-- <groupId>org.codehaus.mojo</groupId> -->
+			<!-- <artifactId>gwt-maven-plugin</artifactId> -->
+			<!-- <version>${gwt.version}</version> -->
+			<!-- <executions> -->
+			<!-- <execution> -->
+			<!-- <configuration> -->
+			<!-- <runTarget>index.html</runTarget> -->
+			<!-- <hostedWebapp>${webapp.target.dir}</hostedWebapp> -->
+			<!-- <modules> -->
+			<!-- <module>net.carefx.fc.Doctor</module> -->
+			<!-- </modules> -->
+			<!-- <extraJvmArgs>-Xmx1024M -Xss1024k</extraJvmArgs> -->
+
+			<!-- </configuration> -->
+			<!-- <goals> -->
+			<!-- <goal>compile</goal> -->
+			<!-- </goals> -->
+			<!-- </execution> -->
+			<!-- </executions> -->
+			<!-- </plugin> -->
+
+			<plugin>
+				<artifactId>maven-antrun-plugin</artifactId>
+				<executions>
+					<execution>
+						<id>clean</id>
+						<configuration>
+
+							<tasks>
+								<echo>clean folder ${webapp.src.dir}</echo>
+								<delete dir="${webapp.src.dir}/WEB-INF/classes" />
+								<delete dir="${webapp.src.dir}/doctor" />
+							</tasks>
+						</configuration>
+						<phase>pre-clean</phase>
+						<goals>
+							<goal>run</goal>
+						</goals>
+					</execution>
+
+					<execution>
+						<id>delete third party jar</id>
+						<phase>package</phase>
+						<goals>
+							<goal>run</goal>
+						</goals>
+						<configuration>
+							<tasks>
+								<taskdef resource="net/sf/antcontrib/antlib.xml"
+									classpath="${settings.localRepository}/ant-contrib/ant-contrib/1.0b3/ant-contrib-1.0b3.jar" />
+								<unzip src="target/${war.name}.war" dest="target/temp" />
+								<delete file="target/${war.name}.war" />
+								<delete>
+									<fileset dir="target\temp\WEB-INF\lib"
+										excludes="framework*.jar,saturn*.jar,fc*.jar,dubbo-2.4.9.jar,jline-0.9.94.jar,zkclient-0.1.jar,zookeeper-3.3.3.jar,jnp-client-2.3.0.Final.jar,shxh*.jar,eventservice*.jar,gwteventservice*.jar,webutil*.jar,report4*.jar,,velocity*.jar,jstl*.jar,standard*.jar,jackson*.jar" />
+								</delete>
+								<!-- </for> -->
+								<zip basedir="target\temp" destfile="target/${war.name}.war" />
+								<!-- <delete dir="target/temp" /> -->
+							</tasks>
+						</configuration>
+					</execution>
+				</executions>
+			</plugin>
+			<plugin>
+				<groupId>org.apache.maven.plugins</groupId>
+				<artifactId>maven-surefire-plugin</artifactId>
+				<configuration>
+					<skip>true</skip>
+				</configuration>
+			</plugin>
+		</plugins>
+		<pluginManagement>
+			<plugins>
+				<plugin>
+					<groupId>org.apache.maven.plugins</groupId>
+					<artifactId>maven-release-plugin</artifactId>
+					<configuration>
+						<tagNameFormat>SHXH@{project.version}</tagNameFormat>
+						<tagBase>https://192.168.66.26/svn/SourceCodeBase/Clinical/21_project/shxh/03_tag/3.0.3.Alpha1/ext/web</tagBase>
+						<autoVersionSubmodules>true</autoVersionSubmodules>
+						<scmCommentPrefix>NoIssue; SHXH release</scmCommentPrefix>
+					</configuration>
+				</plugin>
+				<plugin>
+					<groupId>org.apache.maven.plugins</groupId>
+					<artifactId>maven-compiler-plugin</artifactId>
+					<configuration>
+						<source>1.6</source>
+						<target>1.6</target>
+						<encoding>UTF-8</encoding>
+					</configuration>
+				</plugin>
+			</plugins>
+		</pluginManagement>
+	</build>
+
+
+</project>

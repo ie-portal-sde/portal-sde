@@ -1,0 +1,96 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<Report>
+<PageSize height='997' width='1228'></PageSize>
+<Layout>
+<Label name='label_title' left='2.016667' top='0.229167' right='6.641667' bottom='0.906250' title='上海交通大学医学院附属新华医院' group='0' fontname='楷体_GB2312' fontsize='180' fontbold='1' fontitalic='0' fontunderline='0' fontstrikeout='0' fontcolor='0' justification='1' charset='134'></Label>
+<Field name='titleName' left='2.6500000' top='0.572917' right='6.05000' bottom='1.031250' title='' group='0' fontname='宋体' fontsize='220' fontbold='1' fontitalic='0' fontunderline='0' fontstrikeout='0' fontcolor='0' justification='1' charset='134'></Field>
+<Grid rowCount='30' name='Grid' left='0.250000' top='1.833333' right='8.020000' bottom='9.604167' title='' group='0' border='1' borderthickness='0.000000' borderstyle='0' bordercolor='0' columnlines='1' columnlinethickness='0.000000' columnlinestyle='0' columnlinecolor='0' rowlines='1' rowlinethickness='0.000000' rowlinestyle='0' rowlinecolor='0' lpi='4'>
+<Column width='0.600000' fontName='宋体' fontSize='70' fontItalic='0' fontUnderline='0' fontBold='0' fontStrikeout='0' fontColor='0.000000' justification='1' name='' index='beginDateTime' charset='134' wordbreak="1"></Column>
+<Column width='2.700000' fontName='宋体' fontSize='90' fontItalic='0' fontUnderline='0' fontBold='0' fontStrikeout='0' fontColor='0.000000' justification='0' name='' index='content' charset='134'></Column>
+<Column width='0.640000' fontName='宋体' fontSize='90' fontItalic='0' fontUnderline='0' fontBold='0' fontStrikeout='0' fontColor='0.000000' justification='2' name='' index='docSign' charset='134'></Column>
+<Column width='0.600000' fontName='宋体' fontSize='70' fontItalic='0' fontUnderline='0' fontBold='0' fontStrikeout='0' fontColor='0.000000' justification='1' name='' index='checkNurseDateTime' charset='134' wordbreak="1"></Column>
+<Column width='0.750000' fontName='宋体' fontSize='75' fontItalic='0' fontUnderline='0' fontBold='0' fontStrikeout='0' fontColor='0.000000' justification='2' name='' index='checkNurseSign' charset='134'></Column>
+<Column width='0.600000' fontName='宋体' fontSize='70' fontItalic='0' fontUnderline='0' fontBold='0' fontStrikeout='0' fontColor='0.000000' justification='1' name='' index='stopDocDateTime' charset='134' wordbreak="1"></Column>
+<Column width='0.640000' fontName='宋体' fontSize='90' fontItalic='0' fontUnderline='0' fontBold='0' fontStrikeout='0' fontColor='0.000000' justification='2' name='' index='stopDocSign' charset='134'></Column>
+<Column width='0.600000' fontName='宋体' fontSize='70' fontItalic='0' fontUnderline='0' fontBold='0' fontStrikeout='0' fontColor='0.000000' justification='1' name='' index='stopNurseDateTime' charset='134' wordbreak="1"></Column>
+<Column width='0.640000' fontName='宋体' fontSize='90' fontItalic='0' fontUnderline='0' fontBold='0' fontStrikeout='0' fontColor='0.000000' justification='2' name='' index='stopNurseSign' charset='134'></Column>
+</Grid>
+
+<Box name='' left='0.250000' top='1.677083' right='0.950000' bottom='2.093750' title='' group='0' border='1' borderthickness='0.000000' borderstyle='0' bordercolor='0' fill='1' fillcolor='16777215'></Box>
+<Box name='' left='0.250000' top='1.437500' right='0.950000' bottom='1.687500' title='' group='0' border='1' borderthickness='0.000000' borderstyle='0' bordercolor='0' fill='1' fillcolor='16777215'></Box>
+<Box name='' left='0.850000' top='1.437500' right='3.650000' bottom='2.093750' title='' group='0' border='1' borderthickness='0.000000' borderstyle='0' bordercolor='0' fill='1' fillcolor='16777215'></Box>
+<Box name='' left='3.550000' top='1.437500' right='4.300000' bottom='2.093750' title='' group='0' border='1' borderthickness='0.000000' borderstyle='0' bordercolor='0' fill='1' fillcolor='16777215'></Box>
+<Box name='' left='4.190000' top='1.656250' right='5.000000' bottom='2.093750' title='' group='0' border='1' borderthickness='0.000000' borderstyle='0' bordercolor='0' fill='1' fillcolor='16777215'></Box>
+<Box name='' left='4.790000' top='1.656250' right='5.700000' bottom='2.093750' title='' group='0' border='1' borderthickness='0.000000' borderstyle='0' bordercolor='0' fill='1' fillcolor='16777215'></Box>
+<Box name='' left='4.190000' top='1.437500' right='5.700000' bottom='1.687500' title='' group='0' border='1' borderthickness='0.000000' borderstyle='0' bordercolor='0' fill='1' fillcolor='16777215'></Box>
+<Box name='' left='5.540000' top='1.677083' right='6.300000' bottom='2.093750' title='' group='0' border='1' borderthickness='0.000000' borderstyle='0' bordercolor='0' fill='1' fillcolor='16777215'></Box>
+<Box name='' left='6.140000' top='1.677083' right='7.000000' bottom='2.093750' title='' group='0' border='1' borderthickness='0.000000' borderstyle='0' bordercolor='0' fill='1' fillcolor='16777215'></Box>
+<Box name='' left='6.780000' top='1.677083' right='7.560000' bottom='2.093750' title='' group='0' border='1' borderthickness='0.000000' borderstyle='0' bordercolor='0' fill='1' fillcolor='16777215'></Box>
+<Box name='' left='7.380000' top='1.677083' right='8.020000' bottom='2.093750' title='' group='0' border='1' borderthickness='0.000000' borderstyle='0' bordercolor='0' fill='1' fillcolor='16777215'></Box>
+<Box name='' left='5.540000' top='1.437500' right='8.020000' bottom='1.687500' title='' group='0' border='1' borderthickness='0.000000' borderstyle='0' bordercolor='0' fill='1' fillcolor='16777215'></Box>
+
+<Label name='label_1' left='0.150000' top='1.489583' right='1.000000' bottom='1.708333' title='开始医嘱' group='0' fontname='宋体' fontsize='100' fontbold='0' fontitalic='0' fontunderline='0' fontstrikeout='0' fontcolor='0' justification='1' charset='134'></Label>
+<Label name='label_2' left='0.150000' top='1.781250' right='1.000000' bottom='1.979167' title='日期时间' group='0' fontname='宋体' fontsize='100' fontbold='0' fontitalic='0' fontunderline='0' fontstrikeout='0' fontcolor='0' justification='1' charset='134'></Label>
+<Label name='label_2' left='1.300000' top='1.687500' right='2.900000' bottom='1.937500' title='长 期 医 嘱 内 容' group='0' fontname='宋体' fontsize='120' fontbold='0' fontitalic='0' fontunderline='0' fontstrikeout='0' fontcolor='0' justification='1' charset='134'></Label>
+<Label name='label_2' left='3.700000' top='1.552083' right='4.300000' bottom='1.781250' title='医生' group='0' fontname='宋体' fontsize='120' fontbold='0' fontitalic='0' fontunderline='0' fontstrikeout='0' fontcolor='0' justification='0' charset='134'></Label>
+<Label name='label_2' left='3.700000' top='1.770833' right='4.300000' bottom='2.010417' title='签名' group='0' fontname='宋体' fontsize='120' fontbold='0' fontitalic='0' fontunderline='0' fontstrikeout='0' fontcolor='0' justification='0' charset='134'></Label>
+<Label name='label_1' left='4.400000' top='1.500000' right='5.300000' bottom='1.677083' title='核对医嘱' group='0' fontname='宋体' fontsize='120' fontbold='0' fontitalic='0' fontunderline='0' fontstrikeout='0' fontcolor='0' justification='1' charset='134'></Label>
+<Label name='label_2' left='4.320000' top='1.729167' right='4.720000' bottom='1.947917' title='日期' group='0' fontname='宋体' fontsize='120' fontbold='0' fontitalic='0' fontunderline='0' fontstrikeout='0' fontcolor='0' justification='0' charset='134'></Label>
+<Label name='label_2' left='4.320000' top='1.895833' right='4.720000' bottom='2.135417' title='时间' group='0' fontname='宋体' fontsize='120' fontbold='0' fontitalic='0' fontunderline='0' fontstrikeout='0' fontcolor='0' justification='0' charset='134'></Label>
+<Label name='label_2' left='4.970000' top='1.718750' right='5.450000' bottom='1.906250' title='护士' group='0' fontname='宋体' fontsize='120' fontbold='0' fontitalic='0' fontunderline='0' fontstrikeout='0' fontcolor='0' justification='0' charset='134'></Label>
+<Label name='label_2' left='4.970000' top='1.885417' right='5.450000' bottom='2.156250' title='签名' group='0' fontname='宋体' fontsize='120' fontbold='0' fontitalic='0' fontunderline='0' fontstrikeout='0' fontcolor='0' justification='0' charset='134'></Label>
+<Label name='label_1' left='6.270000' top='1.489583' right='7.350000' bottom='1.708333' title='停 止 医 嘱' group='0' fontname='宋体' fontsize='120' fontbold='0' fontitalic='0' fontunderline='0' fontstrikeout='0' fontcolor='0' justification='1' charset='134'></Label>
+<Label name='label_2' left='5.670000' top='1.729167' right='6.150000' bottom='1.906250' title='日期' group='0' fontname='宋体' fontsize='120' fontbold='0' fontitalic='0' fontunderline='0' fontstrikeout='0' fontcolor='0' justification='0' charset='134'></Label>
+<Label name='label_2' left='5.670000' top='1.895833' right='6.150000' bottom='2.125000' title='时间' group='0' fontname='宋体' fontsize='120' fontbold='0' fontitalic='0' fontunderline='0' fontstrikeout='0' fontcolor='0' justification='0' charset='134'></Label>
+<Label name='label_2' left='6.320000' top='1.729167' right='6.800000' bottom='1.906250' title='医生' group='0' fontname='宋体' fontsize='120' fontbold='0' fontitalic='0' fontunderline='0' fontstrikeout='0' fontcolor='0' justification='0' charset='134'></Label>
+<Label name='label_2' left='6.320000' top='1.895833' right='6.800000' bottom='2.145833' title='签名' group='0' fontname='宋体' fontsize='120' fontbold='0' fontitalic='0' fontunderline='0' fontstrikeout='0' fontcolor='0' justification='0' charset='134'></Label>
+<Label name='label_2' left='6.920000' top='1.895833' right='7.400000' bottom='2.125000' title='时间' group='0' fontname='宋体' fontsize='120' fontbold='0' fontitalic='0' fontunderline='0' fontstrikeout='0' fontcolor='0' justification='0' charset='134'></Label>
+<Label name='label_2' left='6.920000' top='1.729167' right='7.400000' bottom='1.947917' title='日期' group='0' fontname='宋体' fontsize='120' fontbold='0' fontitalic='0' fontunderline='0' fontstrikeout='0' fontcolor='0' justification='0' charset='134'></Label>
+<Label name='label_2' left='7.520000' top='1.729167' right='8.150000' bottom='1.989583' title='护士' group='0' fontname='宋体' fontsize='120' fontbold='0' fontitalic='0' fontunderline='0' fontstrikeout='0' fontcolor='0' justification='0' charset='134'></Label>
+<Label name='label_2' left='7.520000' top='1.885417' right='8.150000' bottom='2.145833' title='签名' group='0' fontname='宋体' fontsize='120' fontbold='0' fontitalic='0' fontunderline='0' fontstrikeout='0' fontcolor='0' justification='0' charset='134'></Label>
+
+<Label name='label_orgNameDiag' left='0.250000' top='1.1000000' right='0.800000' bottom='1.300000' title='科室：' group='0' fontname='宋体' fontsize='120' fontbold='0' fontitalic='0' fontunderline='0' fontstrikeout='0' fontcolor='0' justification='0' charset='134'></Label>
+<Field name='orgNameDiag' left='0.750000' top='1.104167' right='1.800000' bottom='1.300000' title='' group='0' fontname='宋体' fontsize='120' fontbold='0' fontitalic='0' fontunderline='0' fontstrikeout='0' fontcolor='0' justification='0' charset='0'></Field>
+
+<Label name='label_orgNameLoc' left='1.800000' top='1.1000000' right='2.350000' bottom='1.300000' title='病区：' group='0' fontname='宋体' fontsize='120' fontbold='0' fontitalic='0' fontunderline='0' fontstrikeout='0' fontcolor='0' justification='0' charset='134'></Label>
+<Field name='orgNameLoc' left='2.350000' top='1.1000000' right='3.550000' bottom='1.300000' title='' group='0' fontname='宋体' fontsize='120' fontbold='0' fontitalic='0' fontunderline='0' fontstrikeout='0' fontcolor='0' justification='0' charset='0'></Field>
+
+<Label name='label_bed' left='3.550000' top='1.1000000' right='4.100000' bottom='1.300000' title='床号：' group='0' fontname='宋体' fontsize='120' fontbold='0' fontitalic='0' fontunderline='0' fontstrikeout='0' fontcolor='0' justification='0' charset='134'></Label>
+<Field name='bed' left='4.100000' top='1.1000000' right='4.500000' bottom='1.300000' title='' group='0' fontname='宋体' fontsize='120' fontbold='0' fontitalic='0' fontunderline='0' fontstrikeout='0' fontcolor='0' justification='0' charset='0'></Field>
+
+<Label name='label_patiName' left='4.500000' top='1.1000000' right='5.050000' bottom='1.300000' title='姓名：' group='0' fontname='宋体' fontsize='120' fontbold='0' fontitalic='0' fontunderline='0' fontstrikeout='0' fontcolor='0' justification='0' charset='134'></Label>
+<Field name='patiName' left='5.050000' top='1.1000000' right='6.05000' bottom='1.300000' title='' group='0' fontname='宋体' fontsize='120' fontbold='0' fontitalic='0' fontunderline='0' fontstrikeout='0' fontcolor='0' justification='0' charset='0'></Field>
+
+<Label name='label_inpatiId' left='6.05000' top='1.1000000' right='6.750000' bottom='1.300000' title='住院号：' group='0' fontname='宋体' fontsize='120' fontbold='0' fontitalic='0' fontunderline='0' fontstrikeout='0' fontcolor='0' justification='0' charset='134'></Label>
+<Field name='mrn' left='6.750000' top='1.1000000' right='7.400000' bottom='1.300000' title='' group='0' fontname='宋体' fontsize='120' fontbold='0' fontitalic='0' fontunderline='0' fontstrikeout='0' fontcolor='0' justification='0' charset='0'></Field>
+
+<Label name='label_pageNo' left='7.552083' top='1.1000000' right='7.697917' bottom='1.300000' title='第' group='0' fontname='宋体' fontsize='120' fontbold='0' fontitalic='0' fontunderline='0' fontstrikeout='0' fontcolor='0' justification='0' charset='0'></Label>
+<Field name='pageNo' left='7.677083' top='1.1000000' right='7.854167' bottom='1.300000' title='' group='0' fontname='宋体' fontsize='120' fontbold='0' fontitalic='0' fontunderline='0' fontstrikeout='0' fontcolor='0' justification='2' charset='0'></Field>
+<Label name='label_pageNo' left='7.854167' top='1.1000000' right='8.031250' bottom='1.300000' title='页' group='0' fontname='宋体' fontsize='120' fontbold='0' fontitalic='0' fontunderline='0' fontstrikeout='0' fontcolor='0' justification='0' charset='0'></Label>
+
+<Field name='prompt' left='5.854167' top='0.729167' right='7.822917' bottom='0.968750' title='' group='0' fontname='宋体' fontsize='120' fontbold='0' fontitalic='0' fontunderline='0' fontstrikeout='0' fontcolor='0' justification='0' charset='0'></Field>
+</Layout>
+<DataSets>
+<DataSet type='Grid' ref='Grid' rowCount='30'>
+<GridHeader chineseCharRate='3.000' normalCharRate='2.000'>
+<GridColumn name='beginDateTime' width='0.600000' chineseCharWidth='0.093750' normalCharWidth='0.052083'></GridColumn>
+<GridColumn name='content' width='2.700000' chineseCharWidth='0.125000' normalCharWidth='0.062500'></GridColumn>
+<GridColumn name='docSign' width='0.640000' chineseCharWidth='0.125000' normalCharWidth='0.062500'></GridColumn>
+<GridColumn name='checkNurseDateTime' width='0.600000' chineseCharWidth='0.093750' normalCharWidth='0.052083'></GridColumn>
+<GridColumn name='checkNurseSign' width='0.750000' chineseCharWidth='0.125000' normalCharWidth='0.062500'></GridColumn>
+<GridColumn name='stopDocDateTime' width='0.600000' chineseCharWidth='0.093750' normalCharWidth='0.052083'></GridColumn>
+<GridColumn name='stopDocSign' width='0.640000' chineseCharWidth='0.125000' normalCharWidth='0.062500'></GridColumn>
+<GridColumn name='stopNurseDateTime' width='0.600000' chineseCharWidth='0.093750' normalCharWidth='0.052083'></GridColumn>
+<GridColumn name='stopNurseSign' width='0.640000' chineseCharWidth='0.125000' normalCharWidth='0.062500'></GridColumn>
+</GridHeader>
+</DataSet>
+<DataSet type='Field' ref='titleName'></DataSet>
+<DataSet type='Field' ref='orgNameDiag'></DataSet>
+<DataSet type='Field' ref='orgNameLoc'></DataSet>
+<DataSet type='Field' ref='bed'></DataSet>
+<DataSet type='Field' ref='patiName'></DataSet>
+<DataSet type='Field' ref='mrn'></DataSet>
+<DataSet type='Field' ref='pageNo'></DataSet>
+<DataSet type='Field' ref='prompt'></DataSet>
+</DataSets>
+</Report>

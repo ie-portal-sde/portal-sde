@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:dubbo="http://code.alibabatech.com/schema/dubbo"
+	xmlns:jaxws="http://cxf.apache.org/jaxws"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans-2.5.xsd
+	http://code.alibabatech.com/schema/dubbo http://code.alibabatech.com/schema/dubbo/dubbo.xsd
+	http://cxf.apache.org/jaxws http://cxf.apache.org/schemas/jaxws.xsd">
+	<import resource="classpath:META-INF/cxf/cxf.xml" />
+	<import resource="classpath:META-INF/cxf/cxf-extension-soap.xml" />
+	<import resource="classpath:META-INF/cxf/cxf-servlet.xml" />
+	
+	<bean id="fc-doctor-service-test-propertyPlaceholderConfigurer"
+		class="org.springframework.beans.factory.config.PropertyPlaceholderConfigurer">
+		<property name="order" value="2" />
+		<property name="ignoreUnresolvablePlaceholders" value="true" />
+		<property name="systemPropertiesModeName" value="SYSTEM_PROPERTIES_MODE_OVERRIDE" />
+		<property name="locations">
+			<list>
+				<value>file://localhost/${fc_props_dir}/portal/doctor/fc-pis-jdbc.properties
+				</value>
+			</list>
+		</property>
+	</bean>
+
+	<bean id="dataSourceCommonConfig" abstract="true">
+		<property name="poolPreparedStatements" value="false" />
+		<property name="maxActive">
+			<value>${pis.maxActive}</value>
+		</property>
+		<property name="initialSize">
+			<value>${pis.initialSize}</value>
+		</property>
+		<property name="maxWait">
+			<value>${pis.maxWait}</value>
+		</property>
+		<property name="maxIdle">
+			<value>${pis.maxIdle}</value>
+		</property>
+		<property name="minIdle">
+			<value>${pis.minIdle}</value>
+		</property>
+		<property name="removeAbandoned">
+			<value>true</value>
+		</property>
+		<property name="removeAbandonedTimeout">
+			<value>180</value>
+		</property>
+		<!-- 下面四个配置属性用于连接池检测连接的有效性,实现连接断开后(例如网络不稳定导致连接失效),自动进行重连的功能. 注意:虽然连接池支持自动重连,但是要考虑到程序本身是否考虑了失败后重连的情况. 
+			参数解释: testWhileIdle:是否开启一个Evict线程对连接|池中的连接进行有效性检查. validationQuery:用于进行有效性检查的sql语句. 
+			timeBetweenEvictionRunsMillis:Evict线程检查连接有效性的时间间隔. numTestsPerEvictionRun:Evict线程检查连接有效性的最大数量限制, 
+			一般要和maxActive一样大,这样才能保证有效检查所有的链接. -->
+		<property name="testWhileIdle">
+			<value>true</value>
+		</property>
+		<property name="validationQuery">
+			<value>${pis.validationQuery}</value>
+		</property>
+		<property name="timeBetweenEvictionRunsMillis">
+			<value>30000</value>
+		</property>
+
+		<property name="numTestsPerEvictionRun">
+			<value>30</value>
+		</property>
+	</bean>
+
+	<bean id="dataSourceCommonConfig_for_seq" abstract="true"
+		parent="dataSourceCommonConfig" />
+
+	<bean id="fc_pis_dataSource" class="org.apache.commons.dbcp.BasicDataSource"
+		destroy-method="close" parent="dataSourceCommonConfig">
+		<property name="driverClassName" value="${fc.pis.jdbc.driverClassName}" />
+		<property name="url" value="${fc.pis.jdbc.url}" />
+		<property name="username" value="${fc.pis.jdbc.username}" />
+		<property name="password" value="${fc.pis.jdbc.password}" />
+		<property name="poolPreparedStatements" value="false" />
+	</bean>
+
+	<!-- PIS序列生成器所专用 DataSource 业务程序禁止使用，否则导致数据库死锁 -->
+	<bean id="fc_pis_seq_dataSource" class="org.apache.commons.dbcp.BasicDataSource"
+		destroy-method="close" parent="dataSourceCommonConfig_for_seq">
+		<property name="driverClassName" value="${fc.pis.jdbc.driverClassName}" />
+		<property name="url" value="${fc.pis.jdbc.url}" />
+		<property name="username" value="${fc.pis.jdbc.username}" />
+		<property name="password" value="${fc.pis.jdbc.password}" />
+		<property name="poolPreparedStatements" value="false" />
+	</bean>
+	
+	
+	<bean id="fc_dataSource" class="org.apache.commons.dbcp.BasicDataSource"
+		destroy-method="close">
+		<property name="driverClassName" value="${fc.jdbc.driverClassName}" />
+		<property name="url" value="${fc.jdbc.url}" />
+		<property name="username" value="${fc.jdbc.username}" />
+		<property name="password" value="${fc.jdbc.password}" />
+		<property name="poolPreparedStatements" value="false" />
+	</bean>
+	
+	
+</beans>

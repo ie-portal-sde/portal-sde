@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:dubbo="http://code.alibabatech.com/schema/dubbo"
+	xmlns:jaxws="http://cxf.apache.org/jaxws"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans-2.5.xsd
+	http://code.alibabatech.com/schema/dubbo http://code.alibabatech.com/schema/dubbo/dubbo.xsd
+	http://cxf.apache.org/jaxws http://cxf.apache.org/schemas/jaxws.xsd">
+	<import resource="classpath:META-INF/cxf/cxf.xml" />
+	<import resource="classpath:META-INF/cxf/cxf-extension-soap.xml" />
+	<import resource="classpath:META-INF/cxf/cxf-servlet.xml" />
+	<bean id="fc-doctor-service-propertyPlaceholderConfigurer"
+		class="org.springframework.beans.factory.config.PropertyPlaceholderConfigurer">
+		<property name="order" value="2" />
+		<property name="ignoreUnresolvablePlaceholders" value="true" />
+		<property name="systemPropertiesModeName" value="SYSTEM_PROPERTIES_MODE_OVERRIDE" />
+		<property name="locations">
+			<list>
+				  <!-- fc-commmon-service JMS配置信息  -->
+				<value>file://localhost/${fc_props_dir}/common/fc-common-service.properties</value>
+				<value>file://localhost/${fc_props_dir}/portal/doctor/doctor-service.properties</value>
+			</list>
+		</property>
+	</bean>
+	
+	<import resource="classpath:META-INF/dubbo/fc-dubbo-all.xml" />
+	<import resource="classpath:META-INF/service/fc-clinical-facade-service-client.spring.xml" />
+	<import resource="classpath:META-INF/service/fc-cpoe-pis-service.spring.xml" />
+	<import resource="classpath:META-INF/fc-cp-pathway-webService.spring.xml" />
+	<import resource="classpath:META-INF/framework-service-client-all.spring.xml" />
+	<import resource="classpath:META-INF/fc-cpoe-service-client.spring.xml"/>
+	<import resource="classpath:META-INF/shxh-cpoe-service-client.spring.xml"/>
+	
+	<import resource="classpath:META-INF/service/pms/framework-jndi.spring.xml" />
+	<bean id="fc_pis_dataSource" class="org.springframework.jndi.JndiObjectFactoryBean">
+		<property name="jndiName">
+			<value>java:jboss/datasources/PIS_DS</value>
+		</property>
+	</bean> 
+	<bean id="fc_pis_seq_dataSource" class="org.springframework.jndi.JndiObjectFactoryBean">
+		<property name="jndiName">
+			<value>java:jboss/datasources/PIS_DS</value>
+		</property>
+	</bean> 
+
+
+<!-- 	<import resource="classpath:META-INF/framework-service-client-mock.spring.xml" /> -->
+<!-- 	<import resource="classpath:META-INF/fc-pis-datasource-test.spring.xml" /> -->
+</beans>

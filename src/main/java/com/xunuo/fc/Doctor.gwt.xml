@@ -1,0 +1,54 @@
+<module rename-to="doctor">
+	<inherits name="com.google.gwt.user.User"/>
+	<inherits name="com.google.gwt.user.theme.standard.Standard"/>
+	<inherits name="com.extjs.gxt.ui.GXT"/>
+	
+    <inherits name="net.carefx.framework.web.gwt.FrameworkWidgets"/>
+	<!-- fc -->
+	<inherits name="net.carefx.fc.framework.web.FcFramework" />
+	<inherits name="net.carefx.pms.web.workbench.Workbench"/>
+	<inherits name="net.carefx.pms.web.employee.Employee"/>	
+	<inherits name="net.carefx.pms.web.organization.Organization"/>	
+	
+<!-- 	<inherits name="net.carefx.fc.framework.login.FcFrameworkLogin" /> -->
+	
+	<inherits name="de.novanic.eventservice.GWTEventService" />
+	
+	<inherits name="net.carefx.fc.framework.web.gwt.FcFrameworkCore" />
+	
+	<inherits name="net.carefx.fc.patient.facade.web.fc-patient-doctor-facade"/>
+	<inherits name="net.carefx.fc.patient.shxh.Fc-Patient-Web-Shxh-Facede"/>
+
+	<inherits name="net.carefx.fc.common.FcCommon" />
+	
+	<inherits name="net.carefx.fc.framework.web.plugin.FcPlugin" />
+	
+	<inherits name="com.xunuo.framework.xmessage.homepage.HomePage"/>
+	<inherits name="com.xunuo.framework.xmessage.subscribe.Subscribe"/>
+	<inherits name="com.xunuo.framework.xmessage.config.XMessage" />
+	<inherits name="net.carefx.fc.clinical.facade.web.fc-clinical" />
+	
+<!-- 	<inherits name="net.carefx.fc.cpoe.facade.web.shxh-cpoe-doctor"/> -->
+	<inherits name="net.carefx.fc.sde.project.emr.facade.web.fc-sde-project-emr-facade-doctor"/>
+	
+	<!-- 引用CPOE及其扩展功能-->
+	<inherits name="net.carefx.fc.cpoe.facade.web.shxh-cpoe-doctor"/>
+    
+	<!-- 公共入口 -->
+
+	<public path="public" />
+	<script src="sdeeditor.js"/>
+	<script src="deployJava.js"/>
+	<inherits name="com.google.gwt.logging.Logging" />
+	<set-property name="gwt.logging.enabled" value="FALSE" />
+	<set-property name="gwt.logging.logLevel" value="FINE" />
+	<!-- <set-property name="user.agent" value="ie6,ie8,safari" /> -->
+
+	<set-property name="user.agent" value="safari" />
+	<!---->
+	<extend-property name="locale" values="zh" />
+	
+	
+	
+	<entry-point class="com.xunuo.fc.client.Doctor"/>
+</module>

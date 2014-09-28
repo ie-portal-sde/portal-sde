@@ -1,0 +1,36 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<Report>
+<PageSize height='794' width='1123'></PageSize>
+<Layout>
+<Grid rowCount='19' name='Grid' left='0.400000' top='0.300000' right='8.000000' bottom='10.300000' title='' group='0' border='1' borderthickness='0.000000' borderstyle='0' bordercolor='0' columnlines='1' columnlinethickness='0.000000' columnlinestyle='0' columnlinecolor='0' rowlines='1' rowlinethickness='0.000000' rowlinestyle='0' rowlinecolor='0' lpi='2'>
+<Column width='1.050000' fontName='宋体' fontSize='90' fontItalic='0' fontUnderline='0' fontBold='0' fontStrikeout='0' fontColor='0.000000' justification='0' name='病区' index='orgNameLoc' charset='0'></Column>
+<Column width='0.300000' fontName='宋体' fontSize='90' fontItalic='0' fontUnderline='0' fontBold='0' fontStrikeout='0' fontColor='0.000000' justification='0' name='床号' index='bed' charset='0'></Column>
+<Column width='0.450000' fontName='宋体' fontSize='90' fontItalic='0' fontUnderline='0' fontBold='0' fontStrikeout='0' fontColor='0.000000' justification='0' name='住院号' index='mrn' charset='0'></Column>
+<Column width='0.650000' fontName='宋体' fontSize='90' fontItalic='0' fontUnderline='0' fontBold='0' fontStrikeout='0' fontColor='0.000000' justification='0' name='姓名' index='patiName' charset='0' wordbreak="1"></Column>
+<Column width='0.300000' fontName='宋体' fontSize='90' fontItalic='0' fontUnderline='0' fontBold='0' fontStrikeout='0' fontColor='0.000000' justification='0' name='性别' index='sexName' charset='0'></Column>
+<Column width='0.650000' fontName='宋体' fontSize='90' fontItalic='0' fontUnderline='0' fontBold='0' fontStrikeout='0' fontColor='0.000000' justification='0' name='年龄' index='ageString' charset='0'></Column>
+<Column width='1.100000' fontName='宋体' fontSize='90' fontItalic='0' fontUnderline='0' fontBold='0' fontStrikeout='0' fontColor='0.000000' justification='0' name='入院时间' index='inputDate' charset='0'></Column>
+<Column width='1.100000' fontName='宋体' fontSize='90' fontItalic='0' fontUnderline='0' fontBold='0' fontStrikeout='0' fontColor='0.000000' justification='0' name='手术时间' index='opsTimeLast' charset='0'></Column>
+<Column width='2.000000' fontName='宋体' fontSize='90' fontItalic='0' fontUnderline='0' fontBold='0' fontStrikeout='0' fontColor='0.000000' justification='0' name='诊断' index='diagName' charset='0' wordbreak="1"></Column>
+</Grid>
+<Label name='label_1' left='6.000000' top='10.500000' right='6.800000' bottom='11.000000' title='打印时间: ' group='0' fontname='宋体' fontsize='90' fontbold='0' fontitalic='0' fontunderline='0' fontstrikeout='0' fontcolor='0' justification='2' charset='0'></Label>
+<Field name='printDate' left='6.800000' top='10.500000' right='8.000000' bottom='11.000000' title='2012-07-23 10:35' group='0' fontname='宋体' fontsize='90' fontbold='0' fontitalic='0' fontunderline='0' fontstrikeout='0' fontcolor='0' justification='0' charset='0'></Field>
+
+</Layout>
+<DataSets>
+<DataSet type='Grid' ref='Grid' rowCount='19'>
+<GridHeader chineseCharRate='3.000' normalCharRate='2.000'>
+<GridColumn name='orgNameLoc' width='1.050000' chineseCharWidth='0.125000' normalCharWidth='0.062500'></GridColumn>
+<GridColumn name='bed' width='0.300000' chineseCharWidth='0.125000' normalCharWidth='0.062500'></GridColumn>
+<GridColumn name='mrn' width='0.450000' chineseCharWidth='0.125000' normalCharWidth='0.062500'></GridColumn>
+<GridColumn name='patiName' width='0.650000' chineseCharWidth='0.125000' normalCharWidth='0.062500'></GridColumn>
+<GridColumn name='sexName' width='0.300000' chineseCharWidth='0.125000' normalCharWidth='0.062500'></GridColumn>
+<GridColumn name='ageString' width='0.650000' chineseCharWidth='0.125000' normalCharWidth='0.062500'></GridColumn>
+<GridColumn name='inputDate' width='1.100000' chineseCharWidth='0.125000' normalCharWidth='0.062500'></GridColumn>
+<GridColumn name='opsTimeLast' width='1.100000' chineseCharWidth='0.125000' normalCharWidth='0.062500'></GridColumn>
+<GridColumn name='diagName' width='2.000000' chineseCharWidth='0.125000' normalCharWidth='0.062500'></GridColumn>
+</GridHeader>
+</DataSet>
+<DataSet type='Field' ref='printDate'></DataSet>
+</DataSets>
+</Report>
